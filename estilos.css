@@ -1,33 +1,98 @@
 body{
     margin: 0px ;
     font-family: monospace;
-    
+    background-color: black;
+    /*background-image: url("imgs/bg-jelly-fish-para-home.png")*/;    
 }
 
 .header{
-    background-color: black;
+    height: 100px;
     width: 100%;
-    border-bottom: 3px blue solid; 
+    border-bottom: 3px #32b9cd solid; 
+    align-items: center; /*alinhar todos os itens dentro da div */    
 }
 
-h1{
+.titulo{
     margin: 0px;
-    color: blue;
+    color: #32b9cd;
 }
 
-.header .container{
+.container {
+width: 80%;
+display: flex;
+margin: auto    ;
 
-    width: 70%;
-    display: flex;
 
+
+}
+
+.header .container /*aplicar atributos no .container dentro do header */{
+
+    justify-content: space-between; /* propriedade que só pode ser usado com display flex*/
+    /* vai realizar o espaçamento idepender do tamanho*/
+    align-items: center; /*alinhar todos os itens dentro da div */
+    height: 100%;               
 }
 
 .navbar{
 
     width: 500px;
-    list-style: none;
+    list-style: none; /* none= sem atributo*/
     align-items: center;
     color: orange   ;
     justify-content: space-between;
     display: flex;
+    padding: 0;
+}
+
+p{
+    color: white;
+}
+
+/*começo do Banner*/
+.banner{
+height: 500px;
+background-image: url("imgs/bg-jelly-fish-para_outras_pags.png");
+background-size: cover;
+}
+
+.banner .card{
+
+background-color: white;
+height: 450px;/*altura */
+width:400px; /*cumprimento */
+display: flex;/*modelo do display */
+flex-direction: column;/* dirção do display*/
+align-items:  center; /* centralizar todos os itens baseado a div*/
+justify-content: center;
+margin:auto;
+border-radius: 20px;
+margin-top: 20px;
+
+}
+.banner .card {
+
+    color: #c73939
+}
+
+
+.btn{
+
+    font-family: monospace;
+    margin-top: 10px;
+    border: 0;
+    font-weight: 600;
+    background-color: #c73939;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px /*altura*/ 15px; /*largura*/    
+}
+input{
+height: 30px;
+border: 2px solid /*para definir como vai aparecer a cor definida */ #c73939;
+border-radius: 8px; /* arredondar as bordas*/
+
+
+
 }
